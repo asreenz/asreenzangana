@@ -4,10 +4,12 @@
   
     /* Properties for smaller screens.*/
     @media (max-width: 800px) {
-      float: none;
-      width: 100%;
+      .box1 {
+        float: left;
+        width: 100%;
     }
-  }
+    }
+}
 head {
     color: #F3F632;
 }
