@@ -67,16 +67,16 @@ h2 {
   .box{
     display:inline-block;
     height: 100vh;
-     width: 49%;
-      background-color: blue;
-      overflow: scroll;
+    max-width: 49%;
+    background-color: blue;
+    overflow: scroll;
   }
   .box1{
     display:inline-block;
     height: 100vh;
-     width: 49%;
-      background-color: blue;
-      overflow: fixed;
+    max-width: 49%;
+    background-color: blue;
+    overflow: fixed;
   }
   
   .box p{
