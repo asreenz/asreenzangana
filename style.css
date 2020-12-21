@@ -1,7 +1,14 @@
-* {
-    box-sizing: border-box;
+.main {
+    /*Properties for larger screens.*/
+    float: left;
+    width: 60%;
+  
+    /* Properties for smaller screens.*/
+    @media (max-width: 800px) {
+      float: none;
+      width: 100%;
+    }
   }
-@media only screen and (max-width: 768px) {
 head {
     color: #F3F632;
 }
@@ -68,6 +75,7 @@ h2 {
       width: 100vh;
       height: 100vh;
   }
+  /* -- about page scroll -------- */
   .box{
     display:inline-block;
     height: 100vh;
@@ -86,4 +94,3 @@ h2 {
   .box p{
       text-align: center;
   }
-}
