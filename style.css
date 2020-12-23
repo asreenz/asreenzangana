@@ -1,21 +1,11 @@
-.main {
-    /*Properties for larger screens.*/
-    width: 60%;
-  
-    /* Properties for smaller screens.*/
-    @media (max-width: 800px) {
-      .box1 {
-        float: left;
-        width: 100%;
-    }
-    }
-}
+
 head {
     color: #F3F632;
 }
 body {
     background-color:  #2E01EE;
     color: white;
+    overflow: hidden;
 }
 h1 {
     color: #F3F632;
@@ -72,26 +62,109 @@ h2 {
     text-decoration: none;
     color: white;
   }
-  img {
-      max-width: 100%;
-      height:100vh;
+  /*.box1 img {
+    overflow: hidden;
+    max-width: 100%;
+    height:100vh;
+    position: relative;
+}*/
+.box1 img {
+    overflow: hidden;
+    max-width: 100%;
+    max-height:300vh;
+}
+
+/* -------------------images on home page ---------*/
+@media screen and (max-width: 500px) {
+    .column {
+      width: 100%;
+    }
   }
-  /* -- about page scroll -------- */
-  .box{
+  .column img {
+    position: relative;
+    top: 100px;
+    max-width: 300px;
+    max-height: 300px;
+}
+.column img {
+    position: relative;
+    right: 200px;
+    left: 400px;
+    bottom: 400px;
+    max-width: 300px;
+    max-height: 300px;
+}
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  /* -- 'about page' left fixed, right scroll -------- */
+  /* width */
+  ::-webkit-scrollbar {
+    width: 20px;
+    height: 0px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(95, 95, 95, 0); 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: red; 
+    border-radius: 10px;
+  }
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }
+  
+  .box2{
     display:inline-block;
     height: 100vh;
     max-width: 49%;
-    background-color: blue;
+    background-color: #2E01EE;
     overflow: scroll;
   }
   .box1{
     display:inline-block;
     height: 100vh;
-    max-width: 49%;
-    background-color: blue;
-    overflow: fixed;
+    max-width: 50%;
+    background-color: #2E01EE;
+    overflow:  hidden; 
   }
   
-  .box p{
-      text-align: center;
-  }
+  .box2 p{
+    text-align: center;
+}
+/*-----------------------images for work page ------------*/
+.blinking_face img {
+  display: inline-block;
+  height: 100vh;
+}
+
+  .main {
+    /*Properties for larger screens.*/
+    width: 60%;
+    overflow: hidden;
+
+    /* Properties for smaller screens.*/
+    @media (max-width: 800px) {
+      .box1 {
+        float: left;
+        width: 100%;
+    }
+}
+}
