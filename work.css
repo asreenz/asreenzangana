@@ -1,0 +1,111 @@
+body {
+    background-color: rgb(51, 156, 51);
+}
+.popup_content {
+    margin: 10px;
+    padding: 0 10px;
+    max-width: 60%;
+    border: 2px solid #444;
+    background: white;
+  }
+
+
+.work_head {
+    color: rgb(199, 69, 199);
+}
+figure {
+    margin: 5px 30px;
+}
+.face {
+    color: red;
+}
+a {
+    text-decoration: none;
+    color: rgb(9, 103, 165);
+}
+a .hover-img { 
+    position:relative;
+   }
+  a .hover-img span {
+    position:absolute; left:-9999px; top:-9999px; z-index:9999;
+   }
+  a:hover .hover-img span { 
+    top: 40px; 
+    left:0;
+   }
+.tattoo_container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: 1fr;
+    padding: 50px 20px;
+}
+@media (max-width: 900px) {
+    .tattoo_container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 1fr;
+        padding: 20px 20px;
+        }
+    }
+    
+    @media (max-width: 700px) {
+        .tattoo_container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-auto-rows: 1fr;
+            padding: 20px 20px;
+            }
+    }
+
+.container_img {
+    width: 100%;
+    height: 80%;  
+}
+
+.container_img:hover {
+        color: #424242; 
+      -webkit-transition: all .3s ease-in;
+      -moz-transition: all .3s ease-in;
+      -ms-transition: all .3s ease-in;
+      -o-transition: all .3s ease-in;
+      transition: all .3s ease-in;
+      opacity: 1;
+      transform: scale(1.15);
+      -ms-transform: scale(1.15); /* IE 9 */
+      -webkit-transform: scale(2.05); /* Safari and Chrome */
+    }
+    header,section,footer,aside,nav,article,hgroup {
+        display: block;
+    }
+    #skin {
+        width:700px;
+        margin:10px auto;
+        padding:5px;
+        background:red;
+        border:4px solid black;
+        border-radius:10px;
+    }
+    nav {
+        margin: 5px 0px;
+    }
+    #buttons {
+        float:left;
+        width:70px;
+        height:22px;
+    }
+    #defaultBar {
+        position:relative;
+        float:left;
+        width:600px;
+        height:16px;
+        padding:4px;
+        border: 2px solid black;
+        background:yellow;
+    }
+    #progressBar {
+        position:absolute;
+        width:0px;
+        height:16px;
+        background:blue;
+    }
+    
