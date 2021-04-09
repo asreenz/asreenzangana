@@ -1,0 +1,132 @@
+head, h1 {
+  color: #F3F632;
+}
+body {
+  background-color:  #2E01EE;
+  color: white;   
+}
+a{
+  text-decoration: none;
+  color:white;
+}
+h1 {
+  font-size: 25px;
+  text-align: center;
+}
+h2 {
+  font-size: 23px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+.top-container{
+  display:grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 5px;
+}
+#me-home{
+  grid-area:myface;
+  padding-top: 10px;
+  width:100%;
+}
+.About-me{
+  display:block;
+  width:250px;
+  margin-top:30px;
+}
+.place-i-lived{
+  text-decoration: line-through;
+}
+/* TOP TABS */
+.nav-wrap-left, .nav-wrap-center, .nav-wrap-right{
+  position: fixed;
+  top:0;
+  padding: 0 0 0 1.7rem;
+  color: white;
+  text-decoration: none;
+  z-index: 5;
+}
+.nav-wrap-left {
+    left: -1.5%;
+}
+.nav-wrap-center {
+    left: 45%;
+  }
+  .nav-wrap-right {
+    right: 8px;
+  }
+
+  .nav-about {
+      align-content: left;
+  }
+  .nav-about-home {
+      color: red;
+      font-weight: bold;
+      font-size: 25px;
+  }
+  
+/* SCROLLBAR  */
+  /* width */
+  ::-webkit-scrollbar {
+    width: 20px;
+    height: 0px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(95, 95, 95, 0); 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: red; 
+    border-radius: 10px;
+  }
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }
+  
+/*-----------------------------play section------------*/
+.play_container{
+  width:400px;
+}
+.blinking-face{
+  width:100%;
+}
+  /* ----------------------------------------mohnish bday page */
+  .mohnish-pg{
+    display: inline-block;
+    height:100vh;
+  }
+  .my-face{width:100%;}
+
+  .gif-mohnish{
+    width:500px;
+    height:600px;
+  }
+  .h-mohnish, .a-mohnish, .p-mohnish, .y-mohnish, .b-mohnish, .i-mohnish, .r-mohnish, .t-mohnish, .d-mohnish{
+    width:200px;
+  }
+  .birthday-figures{
+    display: inline-block;
+    height:100%;
+    width:150vh;
+  }
+/*-------------------------media properties------------*/
+
+  .main {
+    /*Properties for larger screens.*/
+    width: 60%;
+    overflow: hidden;
+  }
+    /* Properties for smaller screens.*/
+    @media (max-width: 800px) {
+      .box1 {
+        float: left;
+        width: 100%;
+    }
+}
